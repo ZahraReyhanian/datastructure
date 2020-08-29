@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Data Structure</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body data-spy="scroll" data-target="#navbar">
+		<!-- navbar -->
+		<div class="row justify-content-center nav-dark" id="navbar">
+			<ul class="nav">
+				<li class="nav-item">
+					<a href="#stack-main" class="nav-link smooth-scrol">Stack</a>
+				</li>
+				<li class="nav-item">
+					<a href="#queue-main" class="nav-link smooth-scrol">Queue</a>
+				</li>
+				<li class="nav-item">
+					<a href="#linked-list-main" class="nav-link smooth-scrol">Linked List</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- stack -->
+		<div class="container" id="stack-main">
+			<div class="jumbotron">
+				<h1 class="justify-content-center">Stack</h1>
+			</div>
+			<div class="row" id="stack">
+				<div class="col-md-6">
+					<div id="box">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="col-sm-12">
+						<div class="form-group">
+							<label class="form-check-label" for="number">size of box :</label>
+							<select class="form-control" name="number" id="number">
+								<option value="2">2 items</option>
+								<option value="3">3 items</option>
+								<option value="4">4 items</option>
+								<option value="5">5 items</option>
+								<option value="5">6 items</option>
+								<option value="5">7 items</option>
+							</select>
+						</div>
+					</div>
+					<div class="col-sm-12 btn-group">
+						<button class="btn btn-info" id="add-btn">push</button>
+						<button class="btn btn-danger" id="remove-btn">pop</button>
+					</div>
+					<div class="col-sm-12">
+						<div class="alert-danger" id="danger"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- queue -->
+		<div class="container" id="queue-main">
+			<div class="jumbotron">
+				<h1 class="justify-content-center">Queue</h1>
+			</div>
+
+			<div id="queue">
+				<div class="row justify-content-center">
+					<div id="queue-box">
+						<div class="row">
+							<div class="col-md-1 queue-item">front</div>
+							<div class="col-md-1 queue-item"></div>
+							<div class="col-md-1 queue-item"></div>
+							<div class="col-md-1 queue-item"></div>
+							<div class="col-md-1 queue-item"></div>
+							<div class="col-md-1 queue-item"></div>
+							<div class="col-md-1 queue-item"></div>
+							<div class="col-md-1 queue-item"></div>
+							<div class="col-md-1 queue-item"></div>
+							<div class="col-md-1 queue-item"></div>
+							<div class="col-md-1 queue-item"></div>
+							<div class="col-md-1 queue-item"></div>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center" id="queue-bottom">
+					<button class="btn btn-info" id="enQ">Enqueue</button>
+					<button class="btn btn-danger ml-1" id="deQ">Dequeue</button>
+				</div>
+				<div class="col-sm-12 justify-content-center text-center">
+					<div class="alert-danger" id="danger-queue"></div>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- linked list -->
+		<div class="container" id="linked-list-main">
+			<div class="jumbotron">
+				<h1 class="justify-content-center">Linked List</h1>
+			</div>
+			<div id="linked-list">
+
+				<div class="row" id="nodes">
+					<p id="null-p">null</p>
+					<div class="col-md-1" id="start-node">
+						<div id="start">start</div>
+						<div>
+							<i class="fa fa-arrow-right animated fadeInRight infinite"></i>
+						</div>
+					</div>
+
+				</div>
+				<div class="row justify-content-center" id="list-bottom">
+					<button class="btn btn-info" id="insert-btn">Insert</button>
+					<button class="btn btn-warning ml-1" id="removeFirst">remove first</button>
+					<button class="btn btn-danger ml-1" id="removeLast">remove last</button>
+				</div>
+				<div class="col-sm-12 justify-content-center text-center">
+					<div class="alert-danger" id="danger-list"></div>
+				</div>
+			</div>
+		</div>
+		<br><br><br><br>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.easing.js"></script>
+		<script src="js/script.js"></script>
+	</body>
+</html>

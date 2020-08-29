@@ -1,0 +1,120 @@
+.nav-dark {
+    background-color: #212226;
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+    overflow: hidden;
+    position: fixed;
+    z-index: 999;
+}
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    transition: .3ms linear;
+    -webkit-transition: .3ms linear;
+}
+.active ,.nav-dark a:hover,.nav-dark a:focus{
+    color: #6f42c1;
+    border-bottom: 2px solid #6f42c1;
+}
+.jumbotron{
+    padding-top: 100px;
+}
+#stack-main , #queue-main , #linked-list-main {
+    height: 100%;
+    padding-top: 120px;
+}
+#stack , #queue{
+    padding: 50px 120px;
+    background: #e9ecef;
+    margin: auto;
+    width: 100%;
+    height: 300px;
+}
+#box {
+    width: 152px;
+    height: 200px;
+    background: #9fcdff;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+.item {
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    background-color: #6f42c1;
+    border: 2px solid black;
+}
+#danger , #danger-queue{
+    margin-top: 15px;
+    font-size: 16px;
+    display: none;
+}
+/*Queue*/
+#queue-main {
+    margin: auto;
+    margin-top: 80px;
+}
+#queue-box {
+    width: 80%;
+    height: 80px;
+    background: #9fcdff;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-bottom: 40px;
+}
+#queue-box .row {
+    padding: 0;
+    margin: 0;
+}
+.queue-item {
+    height: 80px;
+    background: #9fcdff;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 20px 12px;
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+}
+/*Linked List*/
+#linked-list{
+    padding: 100px 30px;
+    background: #e9ecef;
+    margin: auto;
+    width: 100%;
+    height: 300px;
+}
+.node-data {
+    padding: 8px 5px;
+    display: flex;
+}
+#linked-list i {
+    padding: 7px 0 ;
+}
+#start{
+    background: #6f42c1;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+}
+#start-node {
+    padding: 8px 5px;
+    display: none;
+ }
+.node{
+    padding-right:10px ;
+    padding-left: 10px;
+    border: 1px solid black;
+}
+.icon-arrow {
+    border: 1px solid black;
+    border-left: none;
+}
+#list-bottom {
+    margin-top: 30px;
+}
